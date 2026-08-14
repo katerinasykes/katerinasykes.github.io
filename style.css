@@ -1,0 +1,323 @@
+/* GENERAL */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+.back-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+body{
+    background-color: black;
+    background-size: auto;
+    background-position: top center;
+    background-repeat: repeat;
+    color: white;
+    min-height: 100vh;
+    margin-bottom: 6.5vh;
+}
+main { 
+  flex-grow: 1; 
+}
+html, body {
+    height: 100vh;
+    margin: 0; 
+    padding: 0; 
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    position: absolute;
+    top: 45%;
+    bottom: 65%;
+    text-align: center;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EDE9C8;
+}
+.social{position: absolute;
+    top: 55%;
+    bottom: 45%;
+    text-align: center;
+}
+
+p {
+    color: transparent;
+}
+
+/* TRANSITION */
+
+a, 
+.btn{
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+ header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+ }
+nav, 
+.nav-links{
+    display: flex;
+}
+
+nav{
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    top: 5%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    bottom: 20px;
+    color: #EDE9C8;
+    position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left:0;
+}
+svg{
+    fill:#A2DBFF;
+    stroke:#A2DBFF;
+    stroke-width: 0;
+}
+svg:hover {
+    width: 30px;
+    height: 30px;
+}
+svg:hover path{
+    width: 30px;
+    height: 30px;
+    stroke: #D194B9;
+    stroke-width: 0px;
+    fill:#C7C5FF;
+}
+a {
+    color: #EDE9C8;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: .1rem;
+    text-decoration-color: black;
+}
+.logo-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 4vh;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    object-position: center;  
+}
+.logo {
+    font-size: 2rem;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 700;
+    top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #EDE9C8;
+}
+.wrapper {
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+.button {
+    position: absolute;
+    top: 50%;
+}
+.botton:hover {
+    border-color:#D194B9;
+    border-width:2px;
+    text-transform: bold;
+    text-decoration: line-through;
+    font-size: 2rem;
+}
+footer{
+    height: 6.5vh;
+    padding: 0; 
+    background-color:#D194B9;
+    text-align: center;
+    color: black;
+    padding-top: 15px;
+    position: fixed;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+}
+
+
+
+/* LINKS PAGE */
+
+
+
+.links-wrapper {
+    text-align: center;
+    position: relative;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    gap: 10px; 
+    justify-content: center; 
+}
+.links-wrapper, a, #links-button {
+    text-align: center;
+    position: relative;
+    top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    gap: 5px; 
+    justify-content: center; 
+}
+.links-wrapper, a, #links-button:hover {
+    border-color:#D194B9;
+    font-size: 25px;
+}
+.links-wrapper, a {
+    top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+}
+.links-wrapper, a {
+    font-size: 25px;
+}
+.links-wrapper, a img {
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    position: relative; 
+    display:flex;
+    top: 10px;
+    border: 0px solid #C7C5FF;
+}
+.links-wrapper, a img:hover {
+    border: 2px;
+    border-color:#EDE9C8;
+}
+.copyright, center {
+    font-size: 10px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #EDE9C8;
+    position: relative;
+    align-items: center;
+}
+.links-footer{
+    height: 6vh;
+    padding: 0px; 
+    background-color:#EDE9C8;
+    text-align: center;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: fixed;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+}
+.links-footer a{
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.links-footer, marquee a{
+    color: black;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    bottom: 20px;
+    font-size: 20px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+}
+.links-footer, marquee a:hover{
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: .1rem;
+    text-decoration-color: black;
+}
+
+
+/* INSERTED FONTS */
+
+
+.zen-kaku-gothic-new-light {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-medium {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-bold {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-black {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
